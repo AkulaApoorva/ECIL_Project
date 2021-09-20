@@ -1,0 +1,140 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!Doctype html>
+<html>
+<head>
+    <style>
+        th
+        {
+            border:1px #c1c1c1;
+          
+        }
+         .mySlides 
+        {display:none;
+        }
+        
+        table
+        {
+            border-spacing:50px;
+        }
+        
+            body, html {
+  height: 100%;
+  margin: 0;
+}
+
+        .bg {
+  /* The image used */
+  background-image: url("event1.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        </style>
+</head>
+<body style="background-color:#c1c1c1"><center>
+      <div class="bg">
+    <CENTER><h1 style="font-family:Courier New;color:white;font-size:50px;">EVENT REGISTRATION FORM
+    </h1></CENTER>
+
+    <table>
+        <tr>
+            
+            <th>
+ <form action="eventinsertion.jsp">        
+
+            <table  align="center">
+                <tr>
+                    <td>
+                        <h2 style="font-family:Courier New;color:white;"> <B>EVENTNAME:</b></h2>
+                    </td>
+                    <td>
+                        <input  style="height:30px; width:200px;" type="text" placeholder="Enter EventName" name="Eventname" required>
+                    </td></tr>
+                <tr>
+                    <td>
+                        <h2 style="font-family:Courier New;color:white;"><B> EVENTTIME:</b></h2>
+                    </td>
+                    <td>
+                        <input style="height:30px; width:200px;" type="time" placeholder="Enter Time"  name="Eventtime" required>
+                    </td></tr>
+                <tr>
+                    <td>
+                        <h2 style="font-family:Courier New;color:white;"> <B>EVENTDATE:</b></h2>
+                    </td>
+                    <td>
+                        <input style="height:30px; width:200px;" type="text" placeholder="Enter date" name="Eventdate" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 style="font-family:Courier New;color:white;"> <B>EVENTPLACE:</b></h2>
+                    </td>
+                    <td>
+                        <input style="height:30px; width:200px;" type="text" placeholder="Enter  place" name="Eventplace" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 style="font-family:Courier New;color:white;"><B>PRESENTEDBY:</B></h2>
+                    </td>
+                    <td>
+                        <input style="height:30px; width:200px;" type="text" placeholder="Enter PresentedBy"  name="PresentedBy" required>
+                    </td>
+                </tr>
+            </table><BR>
+            <BR>
+            <center><input style="height:40px; width:150px;" type="submit" value="ADD"> </center>
+
+                </form>
+      
+       
+    </th>   
+    
+    <th>
+        
+        <div class="w3-content w3-section" style="max-width:500px">
+            <!--<H2 style="font-family:Courier New;color:white;">ADD</H2>-->
+  <img class="mySlides" src="ml.png" style="width:100%" height="70%">
+  
+ <img class="mySlides" src="bd.png" style="width:100%">
+  
+   <img class="mySlides" src="iot.png" style="width:100%">
+   
+    <img class="mySlides" src="ds.png" style="width:100%">
+</div>
+    </th>
+   
+    </tr>
+    </table>
+</center>
+            
+                <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+</DIV>
+</body>
+</html>

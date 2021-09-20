@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>css3menu.com</title>
+		<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="link_files/css3menu1/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+	<!-- End css3menu.com HEAD section -->
+
+         <style>
+                body, html {
+  height: 100%;
+  margin: 0;
+}
+
+        .bg {
+  /* The image used */
+  background-image: url("regi.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        </style>
+</head>
+<body style="background-color:#c1c1c1">
+    <div class="bg">
+    <CENTER><h1 style="font-family:Courier New;color:white;font-size:50px;">USER REGISTRATION FORM
+    </h1></CENTER>
+   
+    
+        
+        <form action="userinsertionadmin.jsp" onSubmit="return checkPassword(this)">        
+
+<table cellpadding="5" cellspacing="1"align="center">
+       
+        
+        
+		<tr>
+		<td>
+                    <h3 style="font-family:Courier New;color:white;"> <B>FIRSTNAME:</b></h3>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="text" placeholder="Enter FirstName" name="Firstname" required>
+		</td></tr>
+                <tr>
+		<td>
+                    <h3 style="font-family:Courier New;color:white;"><B>LASTNAME:</b></h3>
+		</td>
+		<td>
+		<input style="height:30px; width:200px;" type="text" placeholder="Enter  LastName"  name="Lastname" required>
+		</td></tr>
+                <tr>
+		<td>
+                    <h3 style="font-family:Courier New;color:white;"> <B>EMAIL:</b></h3>
+		</td>
+		<td>
+		<input style="height:30px; width:200px;" type="Email" placeholder="Enter  Email" name="Email" required>
+		</td>
+		</tr>
+		<tr>
+		<td>
+                    <h3 style="font-family:Courier New;color:white;"><B>PASSWORD:</B></h3>
+                    </td>
+		<td>
+		<input style="height:30px; width:200px;" type="password" placeholder="Enter  Password" maxlength="8" name="Password" required>
+		</td>
+		</tr>
+		<tr>
+		<td>
+                    <h3 style="font-family:Courier New;color:white;"><b>CONFIRMPASSWORD:</b></h3>
+                </td>
+		<td>
+		<input style="height:30px; width:200px;" type="password" placeholder="ConfirmPassword" name="Confirmpassword" required>
+		</td>
+                </tr>
+                
+
+               
+        
+	</table><BR>
+        <BR>
+        <center><input style="height:40px; width:150px;" type="submit" value=Register> 
+           
+           </center>
+            
+	</form>
+       
+    <script>
+        function checkPassword(form)
+        {
+           
+           Password=form.Password.value;
+           Confirmpassword=form.Confirmpassword.value;
+           if(Password == '')
+               alert("Please enter password");
+           else if(Confirmpassword == '')
+             alert("Please enter Confirm password");  
+         else if(Password!= Confirmpassword)
+             {
+                  alert("password did not match.Please try again...");  
+                  return false;
+             }
+             else
+                 {
+                      alert("password  match.Registered successfully");  
+                  return true;
+                 }
+        }
+    </script>
+    </div>
+</body>
+</html>

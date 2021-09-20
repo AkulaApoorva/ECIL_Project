@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <style>
+                body, html {
+  height: 100%;
+  margin: 0;
+}
+
+        .bg {
+  /* The image used */
+  background-image: url("login2.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        </style>
+    </head>
+<body style="background-color:#c1c1c1">
+    
+   <div class="bg">
+       <br><br><br>
+    <CENTER><h1 style="font-family:Courier New;font-size:50px;">USER LOGIN FORM
+    </h1></CENTER>
+<form action="userlogin.jsp">
+	<table cellpadding="10" cellspacing="3" align="center">
+		<tr>
+		<td>
+                    <b>EMAIL:</b>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="Email" placeholder="Enter Email" name="Email" required="">
+		</td>
+		</tr>
+		<tr>
+		<td>
+                    <B>PASSWORD:</B>
+		</td>
+		<td>
+		<input style="height:30px; width:200px;"  type="password" placeholder="Enter Password" name="Password" required=""><br><br>
+		</td>
+		</tr>
+                <tr>
+                    <td>
+                       <input type="submit" value="submit"></td>
+               
+                <td>
+    <a href="forgetuser.html">Forgot Password</a>
+                </td>
+                </tr>
+        </table>
+</form>
+   </div>
+</body>
+</html>

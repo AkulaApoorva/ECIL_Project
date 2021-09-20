@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <style>
+                body, html {
+  height: 100%;
+  margin: 0;
+}
+
+        .bg {
+  /* The image used */
+  background-image: url("ALL4.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        </style>    
+    </head>
+    <body style="background-color:#c1c1c1">
+        
+   <div class="bg">
+       <br><br><br>
+    <CENTER><h3 style="font-family:Courier New;color:white;font-size:40px;">ENTER USER EMAIL WHICH U WANT TO DELETE
+    </h3></CENTER>     
+       <form action="deleteuseradmin.jsp">
+           
+            <table cellpadding="5" cellspacing="1" align="center">
+		<tr>
+		<td>
+                    <h3  Style="font-family:Courier New;color:white;"> <B>EMAIL:</b></h3>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="Email" placeholder="Enter Email" name="Email" required>
+		</td></tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="DELETE">
+                    </td>
+                </tr>
+            </table>
+        </form>
+   </DIV>
+    </body>
+</html>

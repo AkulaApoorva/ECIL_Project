@@ -1,0 +1,89 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <style>
+                body, html {
+  height: 100%;
+  margin: 0;
+}
+
+        .bg {
+  /* The image used */
+  background-image: url("ALL4.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        </style>    
+    </head>
+    <body style="background-color:#c1c1c1">
+        <div class="bg">
+       <br><br><br>
+    <CENTER><h3 style="font-family:Courier New;color:white;font-size:40px;">UPDATE EVENT FORM
+    </h3></CENTER>     
+<form action="updateevent.jsp">
+	<table cellpadding="10" cellspacing="3" align="center">
+            <tr>
+                <td>
+                     <h3  Style="font-family:Courier New;color:white;"> <B>EVENTNAME</b></h3>
+                </td>
+                <td>
+                    <input  style="height:30px; width:200px;" type="text" placeholder="Enter Eventname" name="Eventname" required="">
+                </td>
+            </tr>
+            <tr>
+		<td>
+                    <h3  Style="font-family:Courier New;color:white;"> <B>EVENTTIME</b></h3>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="text" placeholder="Enter Eventtime" name="Eventtime" required>
+		</td></tr>
+                <tr>
+                    <td>
+                    <h3  Style="font-family:Courier New;color:white;"><B>EVENTDATE</b></h3>
+		</td>
+		<td>
+		<input style="height:30px; width:200px;" type="text" placeholder="Enter  Eventdate"  name="Eventdate" required>
+		</td></tr>
+		<tr>
+		<td>
+                    <h3  Style="font-family:Courier New;color:white;"> <b>EVENTPLACE</b></h3>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="text" placeholder="Enter Eventplace" name="Eventplace" required="">
+		</td>
+		</tr>
+                <tr>
+		<td>
+                    <h3  Style="font-family:Courier New;color:white;"> <b>PRESENTEDBY</b></h3>
+		</td>
+		<td>
+		<input  style="height:30px; width:200px;" type="text" placeholder="Enter PresentedBy" name="PresentedBy" required="">
+		</td>
+                
+		</tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="UPDATE"></td>
+               
+                <td>
+                </tr>
+
+</table>
+</form>
+        </DIV>
+
+    </body>
+</html>
